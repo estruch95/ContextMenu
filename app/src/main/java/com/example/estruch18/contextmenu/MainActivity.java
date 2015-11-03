@@ -85,6 +85,7 @@ public class MainActivity extends Activity {
         MenuInflater inflater = getMenuInflater();
         inflater.inflate(R.menu.context_menu, menu);
 
+        //Añadimos la cabecera al contextMenu recogida de la selección del listView
         AdapterView.AdapterContextMenuInfo info = (AdapterView.AdapterContextMenuInfo) menuInfo;
         contacto = ((TextView)info.targetView).getText().toString();
         menu.setHeaderTitle(contacto);
